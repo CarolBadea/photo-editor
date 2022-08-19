@@ -1,0 +1,136 @@
+ html * 
+{
+    box-sizing:border-box;
+    font-size: 16px;
+}
+ 
+body
+{
+  background-color:rgb(138, 138, 214);
+   min-width:1000px;        /* Suppose you want minimum width of 1000px */
+   width: auto !important; 
+   width:1000px; /* Firefox will set width as auto */ 
+}
+
+h1{
+    color:#0a0f3d;
+    text-align: center;
+    font-size: 25px;
+  }
+
+
+#container-main
+{
+    height:100%;
+    width:100%;
+}
+
+
+.containersup
+{
+    background-color: blue;
+    height:490px;
+    width:100%;
+    float:left;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 4.5fr 1fr;
+}
+
+.containerhist
+{
+    background-color:  blue;
+    width:80%;
+    padding:2px;
+    height: 95%;    
+    margin:10px;
+    margin-right: 200px;
+    float:left;
+    vertical-align: top;
+    border: 1px solid ;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.containercanvas
+{
+    margin:5px;
+    padding:2px;
+    height: 95%;
+    width:90%;
+    background-color:  rgb(114, 114, 225);
+    margin:10px;
+    float:right;
+    border: 1px solid ;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+
+.container 
+{ 
+    height:340px;
+    width:100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    float:left;
+}
+
+.left
+{
+    width:90%;
+    height:90%;
+    background-color: rgb(126, 108, 239);
+    margin:10px;
+    padding-bottom:2px;
+    border: 1px solid ;
+    float:left;
+}
+
+.Tcontainer{
+    padding: 1%;
+    width: 98%;
+    margin-bottom: 5px;
+    margin-left:15px;
+}
+
+
+
+#txt {
+    width: 178px;
+    border-radius: 5px;
+    border-color: #000;
+}
+
+button{
+    border-color: #000;
+    background-color: rgb(90, 129, 206);
+    /*width: 200px;*/
+    padding: 0.2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 15px;
+    width:170px;
+    margin:1px;
+    padding:1px;
+    text-align: center;
+}
+
+.text
+{
+    font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+.input2{
+    display:none;
+}
+
+label{
+    cursor:pointer;
+}

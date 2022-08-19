@@ -1,0 +1,85 @@
+<body><!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editor Fotografii</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<h1>
+    Editor Fotografii
+</h1>
+
+<body>
+  <div id="container-main">
+
+  <div class="containersup">
+      <div class="containercanvas">
+         <canvas id="#canvas"></canvas> 
+      </div>
+      
+      <div class="containerhist">
+                
+       </div>
+  </div>
+
+  <div class="container">
+
+      <div class="left">
+        <div class="Tcontainer">
+            <p class="title">Add your Text</p>
+            <p class="txt">
+                Culoarea Textului: <input id="txtColor" type="color"><br>
+               
+            </p>
+            
+            <p class="txt">
+                Text: <input id="txt" type="text"><br>
+                Pozitie: Orizontal:<input id="orizontal"  value="0" type="number" > Vertical:<input id="vertical" 
+                    value="0" type="number" >
+            </p>
+            <p id="pozMax"></p>
+            <button id="btn_add_text">Adauga textul</button>
+        </div> 
+      </div>
+
+      <div class="left">
+        <div class="Tcontainer">
+            <p class="title">Scalare imagine</p>
+            <p class="text">
+                Lugimea imaginii: <input id="scaleHeight" type="number"><br>
+                Latimea Imaginii: <input id="scaleWidth" type="number"><br></p>
+            <p id="dimCurenta"></p>
+            <button id="btn_scale">Scalare</button>
+            <p class="title">Editare </p>    
+            <button id="btn_grayScale">Gray Scale</button></br>
+            
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="Tcontainer">
+            <p class="title">Incarcare/Salvare fisier</p>
+            <button>
+            <label for="sourceTag">
+                Selecteaza imaginea:
+                <input class="source" id="sourceTag" type="file" accept="image/*"/>
+              </label></button></br>
+              <a id="download" download="imagineNoua.png">
+                <button type="button" onClick="download()">Download</button>
+                </a>
+
+            <p class="title">Aplicare Selectie</p>
+            <button id="btn_select_total" class=>Selecteaza toata imaginea</button></br>
+            <button id="btn_delete_section" class=>Sterge zona selectata</button></br>
+            <button id="btn_crop" class=>Crop selectie</button></br>
+        </div>
+      </div>
+  </div>
+
+  </div>
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+</html>
